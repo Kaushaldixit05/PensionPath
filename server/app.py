@@ -5,7 +5,7 @@ from investment_calculator import calculate_investment_strategy
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api/calculate', methods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def calculate():
     try:
         data = request.json
